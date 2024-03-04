@@ -1,0 +1,21 @@
+class Solution {
+
+    /**
+     * @param String[] $word1
+     * @param String[] $word2
+     * @return Boolean
+     */
+    function arrayStringsAreEqual($word1, $word2) {
+        $string1 = '';
+        $string2 = '';
+        foreach($word1 as $element){
+            $string1 = $string1 . $element;
+        }
+
+        foreach($word2 as $element){
+            $string2 = $string2 . $element;
+        }
+
+        return $string1 == $string2;
+    }
+}
